@@ -1,0 +1,38 @@
+smlr
+
+Re-encode jpeg images with no perceivable quality loss.
+
+Uses the butteraugli psychovisual comparison and k-ary search to determine the best jpeg quality setting that will not "appear" degraded.
+
+Installation:
+
+	1. Clone https://github.com/google/butteraugli.
+	2. Run `make` in the `src/` directory to build the `compare_pngs` binary.
+	3. Move `compare_pngs` to some folder in your `PATH`
+	4. `go install github.com/jasonmoo/smlr`
+
+Use:
+
+	smlr -if my_image.jpg -of my_image.best.jpg
+
+	Flags available:
+		-if string
+			file to process
+		-of string
+			output file
+		-width int
+			width to resize to.  omitting either width or height will maintain proportion.
+		-height int
+			height to resize to.  omitting either width or height will maintain proportion.
+		-max float
+			maximum deviation detected (default 1.1)
+		-cores int
+			how many cores to use (default runtime.NumCPU())
+
+
+Inspired by:
+
+	https://medium.com/@duhroach/reducing-jpg-file-size-e5b27df3257c
+
+
+LICENSE: MIT
