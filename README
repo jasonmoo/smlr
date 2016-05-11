@@ -9,7 +9,7 @@ Installation:
 	1. Clone https://github.com/google/butteraugli.
 	2. Run `make` in the `src/` directory to build the `compare_pngs` binary.
 	3. Move `compare_pngs` to some folder in your `PATH`
-	4. `go install github.com/jasonmoo/smlr`
+	4. `go get github.com/jasonmoo/smlr`
 
 Use:
 
