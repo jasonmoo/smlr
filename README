@@ -12,6 +12,7 @@ Installation:
 	2. Run `make` in the `src/` directory to build the `compare_pngs` binary.
 	3. Move `compare_pngs` to some folder in your `PATH`
 	4. `go get github.com/jasonmoo/smlr`
+	5. Run `go build` in the smlr directory and move to some folder in your `PATH`
 
 Use:
 
