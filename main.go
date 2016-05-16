@@ -225,9 +225,9 @@ func karySearch(n, k int, f func(int) bool) int {
 			r := <-resps
 			// start should always be !ok
 			// end should always be ok
-			if !r.ok && r.i > start {
+			if !r.ok && r.i > start && r.i < end {
 				start = r.i
-			} else if r.ok && r.i < end {
+			} else if r.ok && r.i < end && r.i > start {
 				end = r.i
 			}
 		}
