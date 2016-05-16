@@ -1,5 +1,7 @@
 smlr
 
+* This project is experimental and needs some tuning. *
+
 Re-encode jpeg images with no perceivable quality loss.
 
 Uses the butteraugli psychovisual comparison and k-ary search to determine the best jpeg quality setting that will not "appear" degraded.
